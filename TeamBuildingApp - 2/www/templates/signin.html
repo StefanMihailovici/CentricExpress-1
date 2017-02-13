@@ -1,0 +1,52 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <div class="header-button buttons">
+            <a  class="icon-left ion-ios-arrow-thin-left" ng-click="closeSignin()"></a>
+        </div>
+        <h1 class="title">Create Account</h1>
+       <div class="header-button buttons">
+            <a  class="icon-right ion-ios-checkmark-empty" ng-click="closeSignin()"></a>
+        </div>
+    </ion-header-bar>
+    <div class="bar bar-subheader extended-subheader">
+      <a  class="icon-center ion-image" ></a>
+    </div>
+    <ion-content padding="true" class=" has-extended-header sign-in">
+               <form id="signIn-form4" class="list">
+            <label class="item item-input" id="signIn-input6">
+                <div class="form-icon">
+                    <a menu-close="" class="ion-ios-person-outline"></a>
+                </div>
+                <input type="text" placeholder="Name">
+            </label>
+            <label class="item item-input" id="signIn-input7">
+                <div class="form-icon">
+                    <a class="icon-right ion-ios-email-outline"></a>
+                </div>
+                <input type="email" placeholder="Email">
+            </label>
+            <label class="item item-input" id="signIn-input8">
+                <div class="form-icon">
+                    <a class="icon-right ion-ios-locked-outline"></a>
+                </div>
+                <input type="password" placeholder="Password">
+            </label>
+            <label class="item item-input" id="signIn-input9">
+                <div class="form-icon">
+                    <a class="icon-right ion-ios-calendar-outline"></a>
+                </div>
+                <input type="date" placeholder="Birthday">
+            </label>
+            <label class="item item-input" id="signIn-input10">
+                <div class="form-icon">
+                    <a class="icon-right ion-transgender"></a>
+                </div>
+                <input type="text" placeholder="Gender">
+            </label>
+        </form>
+        <div class="login-option">
+            <h6>Already have an account? </h6>
+            <h6 ng-click="closeSignin()">Sign In</h6>
+        </div>
+    </ion-content>
+</ion-modal-view>
