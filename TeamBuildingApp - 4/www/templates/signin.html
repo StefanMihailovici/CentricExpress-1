@@ -5,45 +5,49 @@
         </div>
         <h1 class="title">Create Account</h1>
        <div class="header-button buttons">
-            <a  class="icon-right ion-ios-checkmark-empty" ng-click="closeSignin()"></a>
+            <!--<a  class="icon-right ion-ios-checkmark-empty" ng-click="doSignin()"></a>-->
         </div>
     </ion-header-bar>
     <div class="bar bar-subheader extended-subheader">
       <a  class="icon-center ion-image" ></a>
     </div>
-    <ion-content padding="true" class=" has-extended-header sign-in">
+    <ion-content padding="true" class=" has-extended-header sign-in" ng-controller="SigninCtrl as signin">
                <form id="signIn-form4" class="list">
             <label class="item item-input" id="signIn-input6">
                 <div class="form-icon">
                     <a menu-close="" class="ion-ios-person-outline"></a>
                 </div>
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Name" ng-model="signinName">
             </label>
             <label class="item item-input" id="signIn-input7">
                 <div class="form-icon">
                     <a class="icon-right ion-ios-email-outline"></a>
                 </div>
-                <input type="email" placeholder="Email">
+                <input type="email" placeholder="Email" ng-model="signinEmail">
             </label>
             <label class="item item-input" id="signIn-input8">
                 <div class="form-icon">
                     <a class="icon-right ion-ios-locked-outline"></a>
                 </div>
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" ng-model="signinPassword">
             </label>
             <label class="item item-input" id="signIn-input9">
                 <div class="form-icon">
                     <a class="icon-right ion-ios-calendar-outline"></a>
                 </div>
-                <input type="date" placeholder="Birthday">
+                <input type="date" placeholder="Birthday" ng-model="signinDate">
             </label>
             <label class="item item-input" id="signIn-input10">
                 <div class="form-icon">
                     <a class="icon-right ion-transgender"></a>
                 </div>
-                <input type="text" placeholder="Gender">
+                <input type="text" placeholder="Gender" ng-model="signinGender">
             </label>
         </form>
+        <div class="log-in log-in--no-background">
+     <button id="login-button2" class="button button-block" ng-click="doSignin()">Signin</button>
+        </div>
+   
         <div class="login-option">
             <h6>Already have an account? </h6>
             <h6 ng-click="closeSignin()">Sign In</h6>

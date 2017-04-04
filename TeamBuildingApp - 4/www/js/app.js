@@ -7,6 +7,7 @@
 angular.module('starter', ['ionic', 
 'starter.controllers',
 'login.controller',
+'signin.controller',
 'day1.controller',
 'login.factory'])
 

@@ -316,6 +316,9 @@ input[type="date"]{
      display: flex;
      justify-content: center;
 }
+.log-in--no-background{
+    background:none;
+}
 .log-in .form-container label.item{
     border-color: #fff;
 }
