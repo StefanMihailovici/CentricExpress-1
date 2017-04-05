@@ -1,7 +1,7 @@
 <ion-view title='<div class="customize-header"> <h4>Good Morning!</h1>                        
                 </div>
-                <img class="header-img" src="http://i2.mirror.co.uk/incoming/article5423743.ece/ALTERNATES/s615b/MOST-BEAUTIFUL-FACES.jpg">' 
-                ng-controller="Day1Ctrl as login"> 
+                <img class="header-img" src="http://i2.mirror.co.uk/incoming/article5423743.ece/ALTERNATES/s615b/MOST-BEAUTIFUL-FACES.jpg">'
+                ng-controller="Day1Ctrl" > 
     <div class="bar bar-subheader extended-subheader">
         <h4>Day 1</h4>
         <h1>{{ day1.date.dayOfWeek }}</h1>
@@ -19,39 +19,9 @@
                         {{event.location}}
                     </p>
                      <p> {{event.description}}</p>
-                </div>
-               
+                </div>          
                 <span class="item-note"> {{event.startTime.hour}}:{{event.startTime.minute}}-{{event.endTime.hour}}:{{event.endTime.minute}}</span>
             </a>
-
-            <!--<a class="item item-avatar item-icon-left customize-item" href="#">
-                <div>
-                    <h3>Capture The Flag</h2>
-                </div>
-                <span class="item-note">10-12pm</span>
-            </a>
-            <a class="item item-avatar item-icon-left customize-item" href="#">
-                <div>
-                    <h3>Lunch Break</h2>
-                    <p>Hotel restaurant</p>
-                </div>
-                <span class="item-note">13-15pm</span>
-            </a>
-            <a class="item item-avatar item-icon-left customize-item" href="#">
-                 <div>
-                    <h3>Company Update</h2>
-                    <p>Conference Room 401</p>
-                    <img  src="http://i2.mirror.co.uk/incoming/article5423743.ece/ALTERNATES/s615b/MOST-BEAUTIFUL-FACES.jpg">
-                </div>
-                <span class="item-note">15-17pm</span>
-            </a>
-            <a class="item item-avatar item-icon-left customize-item" href="#">
-                <div>
-                    <h3>Funny Stuff</h2>
-                    <p>Outside Garden</p>
-                </div>
-                <span class="item-note">17-20pm</span>
-            </a>-->
         </div>
     </ion-content>
     

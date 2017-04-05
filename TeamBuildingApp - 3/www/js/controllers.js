@@ -33,42 +33,11 @@ angular.module('starter.controllers', [])
     $scope.forgetpass = modal;
   });
 
-  $ionicModal.fromTemplateUrl('templates/day1.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.day1 = modal;
-  });
-  $ionicModal.fromTemplateUrl('templates/day2.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.day2 = modal;
-  });
-  $ionicModal.fromTemplateUrl('templates/day3.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.day3 = modal;
-  });
   $ionicModal.fromTemplateUrl('templates/signin.html', {
     scope: $scope
   }).then(function(modal) {
     $scope.signin = modal;
   });
-
-
-  $scope.closeDay = function(num) {
-      var days={
-       1:function(){
-          $scope.day1.hide();
-       },
-       2:function(){
-          $scope.day2.hide();
-       },
-       3:function(){
-          $scope.day3.hide();
-       }
-     }
-     days[num]();
-  };
 
   $scope.showLogin = function() {
     $scope.modal.show();

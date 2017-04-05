@@ -91,7 +91,8 @@ angular.module('starter', ['ionic',
       url: '/day1',
       views: {
         'menuContent': {
-          templateUrl: 'templates/day1.html'
+          templateUrl: 'templates/day1.html',
+          controller:'Day1Ctrl',
         }
       }
     })
