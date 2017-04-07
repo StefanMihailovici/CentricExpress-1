@@ -7,9 +7,10 @@
 angular.module('starter', ['ionic', 
 'starter.controllers',
 'login.controller',
-'signin.controller',
+'login.factory',
 'day1.controller',
-'login.factory'])
+'day1.factory',
+'signin.controller'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

@@ -1,4 +1,4 @@
-angular.module('day.factory', [])
+angular.module('day1.factory', [])
   .factory('dayFactory', function ($http, $q) {
    function getDays() {
       var promise = $http.get("http://sonarqubt-sqb02:8080/api/v1/eventDays")
